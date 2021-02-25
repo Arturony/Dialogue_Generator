@@ -43,10 +43,15 @@ namespace Dialogue_Generator
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBanner = new System.Windows.Forms.Panel();
+            this.characterName = new System.Windows.Forms.Label();
+            this.graphNameButton = new System.Windows.Forms.Button();
+            this.graphText = new System.Windows.Forms.TextBox();
+            this.graphName = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.EdgePanel = new System.Windows.Forms.Panel();
+            this.edgeRemoveButton = new System.Windows.Forms.Button();
             this.edgeFromText = new System.Windows.Forms.TextBox();
             this.edgeToText = new System.Windows.Forms.TextBox();
             this.edgeFromLabel = new System.Windows.Forms.Label();
@@ -59,6 +64,7 @@ namespace Dialogue_Generator
             this.edgeValueLabel = new System.Windows.Forms.Label();
             this.EdgeList = new System.Windows.Forms.ListBox();
             this.nodePanel = new System.Windows.Forms.Panel();
+            this.removeNodeButton = new System.Windows.Forms.Button();
             this.restrictionsButton = new System.Windows.Forms.Button();
             this.nodeAdd = new System.Windows.Forms.Button();
             this.interactionCheck = new System.Windows.Forms.CheckBox();
@@ -69,12 +75,6 @@ namespace Dialogue_Generator
             this.nodeKeyLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NodeList = new System.Windows.Forms.ListBox();
-            this.removeNodeButton = new System.Windows.Forms.Button();
-            this.edgeRemoveButton = new System.Windows.Forms.Button();
-            this.graphName = new System.Windows.Forms.Label();
-            this.graphText = new System.Windows.Forms.TextBox();
-            this.graphNameButton = new System.Windows.Forms.Button();
-            this.characterName = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             this.panelBanner.SuspendLayout();
@@ -111,28 +111,28 @@ namespace Dialogue_Generator
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.saveToolStripMenuItem.Text = "Save                 ";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.loadToolStripMenuItem.Text = "Load                ";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -159,7 +159,7 @@ namespace Dialogue_Generator
             // tutorialToolStripMenuItem
             // 
             this.tutorialToolStripMenuItem.Name = "tutorialToolStripMenuItem";
-            this.tutorialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tutorialToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.tutorialToolStripMenuItem.Text = "Tutorial";
             // 
             // aboutToolStripMenuItem
@@ -173,7 +173,7 @@ namespace Dialogue_Generator
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.versionToolStripMenuItem.Text = "Dialogue Creator";
             this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
             // 
@@ -190,6 +190,40 @@ namespace Dialogue_Generator
             this.panelBanner.Size = new System.Drawing.Size(712, 71);
             this.panelBanner.TabIndex = 1;
             this.panelBanner.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBanner_Paint);
+            // 
+            // characterName
+            // 
+            this.characterName.AutoSize = true;
+            this.characterName.Location = new System.Drawing.Point(99, 4);
+            this.characterName.Name = "characterName";
+            this.characterName.Size = new System.Drawing.Size(0, 13);
+            this.characterName.TabIndex = 3;
+            // 
+            // graphNameButton
+            // 
+            this.graphNameButton.Location = new System.Drawing.Point(16, 48);
+            this.graphNameButton.Name = "graphNameButton";
+            this.graphNameButton.Size = new System.Drawing.Size(75, 23);
+            this.graphNameButton.TabIndex = 2;
+            this.graphNameButton.Text = "Change";
+            this.graphNameButton.UseVisualStyleBackColor = true;
+            this.graphNameButton.Click += new System.EventHandler(this.graphNameButton_Click);
+            // 
+            // graphText
+            // 
+            this.graphText.Location = new System.Drawing.Point(16, 24);
+            this.graphText.Name = "graphText";
+            this.graphText.Size = new System.Drawing.Size(161, 20);
+            this.graphText.TabIndex = 1;
+            // 
+            // graphName
+            // 
+            this.graphName.AutoSize = true;
+            this.graphName.Location = new System.Drawing.Point(13, 4);
+            this.graphName.Name = "graphName";
+            this.graphName.Size = new System.Drawing.Size(87, 13);
+            this.graphName.TabIndex = 0;
+            this.graphName.Text = "Character Name:";
             // 
             // MainPanel
             // 
@@ -244,6 +278,16 @@ namespace Dialogue_Generator
             this.EdgePanel.Name = "EdgePanel";
             this.EdgePanel.Size = new System.Drawing.Size(348, 201);
             this.EdgePanel.TabIndex = 2;
+            // 
+            // edgeRemoveButton
+            // 
+            this.edgeRemoveButton.Location = new System.Drawing.Point(178, 165);
+            this.edgeRemoveButton.Name = "edgeRemoveButton";
+            this.edgeRemoveButton.Size = new System.Drawing.Size(75, 23);
+            this.edgeRemoveButton.TabIndex = 5;
+            this.edgeRemoveButton.Text = "Remove";
+            this.edgeRemoveButton.UseVisualStyleBackColor = true;
+            this.edgeRemoveButton.Click += new System.EventHandler(this.edgeRemoveButton_Click);
             // 
             // edgeFromText
             // 
@@ -359,6 +403,16 @@ namespace Dialogue_Generator
             this.nodePanel.Size = new System.Drawing.Size(348, 195);
             this.nodePanel.TabIndex = 1;
             // 
+            // removeNodeButton
+            // 
+            this.removeNodeButton.Location = new System.Drawing.Point(178, 154);
+            this.removeNodeButton.Name = "removeNodeButton";
+            this.removeNodeButton.Size = new System.Drawing.Size(75, 23);
+            this.removeNodeButton.TabIndex = 6;
+            this.removeNodeButton.Text = "Remove";
+            this.removeNodeButton.UseVisualStyleBackColor = true;
+            this.removeNodeButton.Click += new System.EventHandler(this.removeNodeButton_Click);
+            // 
             // restrictionsButton
             // 
             this.restrictionsButton.Location = new System.Drawing.Point(48, 154);
@@ -452,60 +506,6 @@ namespace Dialogue_Generator
             this.NodeList.TabIndex = 0;
             this.NodeList.SelectedIndexChanged += new System.EventHandler(this.NodeList_SelectedIndexChanged);
             // 
-            // removeNodeButton
-            // 
-            this.removeNodeButton.Location = new System.Drawing.Point(178, 154);
-            this.removeNodeButton.Name = "removeNodeButton";
-            this.removeNodeButton.Size = new System.Drawing.Size(75, 23);
-            this.removeNodeButton.TabIndex = 6;
-            this.removeNodeButton.Text = "Remove";
-            this.removeNodeButton.UseVisualStyleBackColor = true;
-            this.removeNodeButton.Click += new System.EventHandler(this.removeNodeButton_Click);
-            // 
-            // edgeRemoveButton
-            // 
-            this.edgeRemoveButton.Location = new System.Drawing.Point(178, 165);
-            this.edgeRemoveButton.Name = "edgeRemoveButton";
-            this.edgeRemoveButton.Size = new System.Drawing.Size(75, 23);
-            this.edgeRemoveButton.TabIndex = 5;
-            this.edgeRemoveButton.Text = "Remove";
-            this.edgeRemoveButton.UseVisualStyleBackColor = true;
-            this.edgeRemoveButton.Click += new System.EventHandler(this.edgeRemoveButton_Click);
-            // 
-            // graphName
-            // 
-            this.graphName.AutoSize = true;
-            this.graphName.Location = new System.Drawing.Point(13, 4);
-            this.graphName.Name = "graphName";
-            this.graphName.Size = new System.Drawing.Size(87, 13);
-            this.graphName.TabIndex = 0;
-            this.graphName.Text = "Character Name:";
-            // 
-            // graphText
-            // 
-            this.graphText.Location = new System.Drawing.Point(16, 24);
-            this.graphText.Name = "graphText";
-            this.graphText.Size = new System.Drawing.Size(161, 20);
-            this.graphText.TabIndex = 1;
-            // 
-            // graphNameButton
-            // 
-            this.graphNameButton.Location = new System.Drawing.Point(16, 48);
-            this.graphNameButton.Name = "graphNameButton";
-            this.graphNameButton.Size = new System.Drawing.Size(75, 23);
-            this.graphNameButton.TabIndex = 2;
-            this.graphNameButton.Text = "Change";
-            this.graphNameButton.UseVisualStyleBackColor = true;
-            this.graphNameButton.Click += new System.EventHandler(this.graphNameButton_Click);
-            // 
-            // characterName
-            // 
-            this.characterName.AutoSize = true;
-            this.characterName.Location = new System.Drawing.Point(99, 4);
-            this.characterName.Name = "characterName";
-            this.characterName.Size = new System.Drawing.Size(0, 13);
-            this.characterName.TabIndex = 3;
-            // 
             // listView1
             // 
             this.listView1.HideSelection = false;
@@ -530,7 +530,7 @@ namespace Dialogue_Generator
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DialogueGenerator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dialogue Creator";
+            this.Text = "Dialogue Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

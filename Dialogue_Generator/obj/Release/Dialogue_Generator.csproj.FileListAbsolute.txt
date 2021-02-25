@@ -1,0 +1,14 @@
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Newtonsoft.Json.dll
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Newtonsoft.Json.xml
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.csprojAssemblyReference.cache
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.DialogueGenerator.resources
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.NewCharacter.resources
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.Properties.Resources.resources
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.csproj.GenerateResource.cache
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.csproj.CoreCompileInputs.cache
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.csproj.CopyComplete
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Dialogue Generator.exe.config
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Dialogue Generator.exe
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Dialogue Generator.pdb
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue Generator.exe
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue Generator.pdb
