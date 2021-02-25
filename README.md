@@ -1,4 +1,4 @@
-# Dialogue Generator
+# Dialogue Generator    ![dialogue generator logo](https://res.cloudinary.com/dppvsoi3y/image/upload/c_scale,w_100/v1614217302/Dialogue_Generator/dialogue_logo_ofxhet.png)
 
 This is a program I created to facilitate the creation of the .json files that my dialogue system uses. <br>
 I don't know how you can practically use this, because is for my specific data structure <br>
