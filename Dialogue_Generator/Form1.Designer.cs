@@ -1,7 +1,7 @@
 ﻿
 namespace Dialogue_Generator
 {
-    partial class Form1
+    partial class DialogueGenerator
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,6 +29,7 @@ namespace Dialogue_Generator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogueGenerator));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -227,6 +228,7 @@ namespace Dialogue_Generator
             // EdgePanel
             // 
             this.EdgePanel.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.EdgePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.EdgePanel.Controls.Add(this.edgeRemoveButton);
             this.EdgePanel.Controls.Add(this.edgeFromText);
             this.EdgePanel.Controls.Add(this.edgeToText);
@@ -341,6 +343,7 @@ namespace Dialogue_Generator
             // nodePanel
             // 
             this.nodePanel.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.nodePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.nodePanel.Controls.Add(this.removeNodeButton);
             this.nodePanel.Controls.Add(this.restrictionsButton);
             this.nodePanel.Controls.Add(this.nodeAdd);
@@ -512,7 +515,7 @@ namespace Dialogue_Generator
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // Form1
+            // DialogueGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -523,8 +526,9 @@ namespace Dialogue_Generator
             this.Controls.Add(this.panelBanner);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "DialogueGenerator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dialogue Creator";
             this.Load += new System.EventHandler(this.Form1_Load);

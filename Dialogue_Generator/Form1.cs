@@ -13,11 +13,11 @@ using Newtonsoft.Json;
 
 namespace Dialogue_Generator
 {
-    public partial class Form1 : Form
+    public partial class DialogueGenerator : Form
     {
         private Graph graph;
 
-        public Form1()
+        public DialogueGenerator()
         {
             InitializeComponent();
         }
@@ -34,13 +34,11 @@ namespace Dialogue_Generator
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.InitialDirectory = @"C:\";      
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();   
             saveFileDialog1.Title = "Save Dialogue File";
             saveFileDialog1.DefaultExt = "json";
             saveFileDialog1.Filter = "json files (*.json)|*.json|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 0;
-            saveFileDialog1.RestoreDirectory = true;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 //valid path. save file
@@ -297,19 +295,19 @@ namespace Dialogue_Generator
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            graph = new Graph("");
-            NodeList.Items.Clear();
-            EdgeList.Items.Clear();
-            ResetNode();
-            ResetEdge();
-            graphText.Text = "";
-            characterName.Text = "";
+            
 
             NewCharacter character = new NewCharacter();
             DialogResult dialogResult = character.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
                 characterName.Text = character.nombre;
+                graph = new Graph("");
+                NodeList.Items.Clear();
+                EdgeList.Items.Clear();
+                ResetNode();
+                ResetEdge();
+                graphText.Text = "";
             }
         }
 
@@ -325,7 +323,7 @@ namespace Dialogue_Generator
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
-             
+              
         }
     }
 }

@@ -4,7 +4,6 @@ C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dial
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Newtonsoft.Json.dll
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Newtonsoft.Json.xml
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csprojAssemblyReference.cache
-C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.Form1.resources
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.Properties.Resources.resources
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csproj.GenerateResource.cache
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csproj.CoreCompileInputs.cache
@@ -12,3 +11,4 @@ C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dial
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.exe
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.pdb
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.NewCharacter.resources
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.DialogueGenerator.resources
