@@ -325,5 +325,16 @@ namespace Dialogue_Generator
         {
               
         }
+
+        private void tutorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tutorial tut = new Tutorial();
+            tut.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

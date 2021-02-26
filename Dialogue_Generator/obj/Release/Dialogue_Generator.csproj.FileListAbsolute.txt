@@ -12,3 +12,4 @@ C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Di
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Release\Dialogue Generator.pdb
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue Generator.exe
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue Generator.pdb
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Release\Dialogue_Generator.Tutorial.resources

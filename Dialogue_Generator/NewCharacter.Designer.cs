@@ -29,6 +29,7 @@ namespace Dialogue_Generator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewCharacter));
             this.label1 = new System.Windows.Forms.Label();
             this.characterInitial = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
@@ -69,6 +70,7 @@ namespace Dialogue_Generator
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.characterInitial);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewCharacter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NewCharacter";

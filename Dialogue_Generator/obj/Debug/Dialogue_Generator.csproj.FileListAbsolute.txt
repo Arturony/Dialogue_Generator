@@ -1,6 +1,3 @@
-C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dialogue_Generator.exe.config
-C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dialogue_Generator.exe
-C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dialogue_Generator.pdb
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Newtonsoft.Json.dll
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Newtonsoft.Json.xml
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csprojAssemblyReference.cache
@@ -8,7 +5,11 @@ C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dial
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csproj.GenerateResource.cache
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csproj.CoreCompileInputs.cache
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.csproj.CopyComplete
-C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.exe
-C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.pdb
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.NewCharacter.resources
 C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.DialogueGenerator.resources
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dialogue Generator.exe.config
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dialogue Generator.exe
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\bin\Debug\Dialogue Generator.pdb
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue Generator.exe
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue Generator.pdb
+C:\Users\dell5\source\repos\Dialogue_Generator\Dialogue_Generator\obj\Debug\Dialogue_Generator.Tutorial.resources

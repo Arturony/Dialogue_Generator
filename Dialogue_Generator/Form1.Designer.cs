@@ -76,11 +76,13 @@ namespace Dialogue_Generator
             this.label1 = new System.Windows.Forms.Label();
             this.NodeList = new System.Windows.Forms.ListBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panelBanner.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.EdgePanel.SuspendLayout();
             this.nodePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -111,28 +113,28 @@ namespace Dialogue_Generator
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save                 ";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadToolStripMenuItem.Text = "Load                ";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -159,8 +161,9 @@ namespace Dialogue_Generator
             // tutorialToolStripMenuItem
             // 
             this.tutorialToolStripMenuItem.Name = "tutorialToolStripMenuItem";
-            this.tutorialToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.tutorialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tutorialToolStripMenuItem.Text = "Tutorial";
+            this.tutorialToolStripMenuItem.Click += new System.EventHandler(this.tutorialToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -180,6 +183,7 @@ namespace Dialogue_Generator
             // panelBanner
             // 
             this.panelBanner.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panelBanner.Controls.Add(this.pictureBox1);
             this.panelBanner.Controls.Add(this.characterName);
             this.panelBanner.Controls.Add(this.graphNameButton);
             this.panelBanner.Controls.Add(this.graphText);
@@ -245,9 +249,9 @@ namespace Dialogue_Generator
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(537, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
+            this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Edges";
+            this.label5.Text = "Options";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
@@ -255,9 +259,10 @@ namespace Dialogue_Generator
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(13, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Nodes";
+            this.label4.Text = "Dialogues";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // EdgePanel
             // 
@@ -353,9 +358,9 @@ namespace Dialogue_Generator
             this.edgeTitle.AutoSize = true;
             this.edgeTitle.Location = new System.Drawing.Point(7, 10);
             this.edgeTitle.Name = "edgeTitle";
-            this.edgeTitle.Size = new System.Drawing.Size(32, 13);
+            this.edgeTitle.Size = new System.Drawing.Size(38, 13);
             this.edgeTitle.TabIndex = 0;
-            this.edgeTitle.Text = "Edge";
+            this.edgeTitle.Text = "Option";
             this.edgeTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // edgeValueText
@@ -492,9 +497,9 @@ namespace Dialogue_Generator
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Node";
+            this.label1.Text = "Dialogue";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // NodeList
@@ -514,6 +519,17 @@ namespace Dialogue_Generator
             this.listView1.Size = new System.Drawing.Size(121, 97);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(614, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // DialogueGenerator
             // 
@@ -542,6 +558,7 @@ namespace Dialogue_Generator
             this.EdgePanel.PerformLayout();
             this.nodePanel.ResumeLayout(false);
             this.nodePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -595,6 +612,7 @@ namespace Dialogue_Generator
         private System.Windows.Forms.Label graphName;
         private System.Windows.Forms.Label characterName;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
