@@ -60,6 +60,18 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Graph.cs" />
+    <Compile Include="Restriction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restriction.Designer.cs">
+      <DependentUpon>Restriction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restrictions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restrictions.Designer.cs">
+      <DependentUpon>Restrictions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tutorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restriction.resx">
+      <DependentUpon>Restriction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restrictions.resx">
+      <DependentUpon>Restrictions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tutorial.resx">
       <DependentUpon>Tutorial.cs</DependentUpon>

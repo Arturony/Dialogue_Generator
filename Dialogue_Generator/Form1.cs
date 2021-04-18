@@ -68,22 +68,29 @@ namespace Dialogue_Generator
 
         private void NodeList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Remove previous information
-            EdgeList.Items.Clear();
-
-            string s = (String)NodeList.Items[NodeList.SelectedIndex];
-
-            Node n = graph.GetNode(s);
-
-            nodeKeyText.Text = n.key;
-            nodeValueText.Text = n.value;
-            interactionCheck.Checked = n.reviwable;
-
-            edgeFromText.Text = n.key;
-
-            foreach(Edge edge in n.getAllEdges())
+            try
             {
-                EdgeList.Items.Add(edge.key);
+                //Remove previous information
+                EdgeList.Items.Clear();
+
+                string s = (String)NodeList.Items[NodeList.SelectedIndex];
+
+                Node n = graph.GetNode(s);
+
+                nodeKeyText.Text = n.key;
+                nodeValueText.Text = n.value;
+                interactionCheck.Checked = n.reviwable;
+
+                edgeFromText.Text = n.key;
+
+                foreach (Edge edge in n.getAllEdges())
+                {
+                    EdgeList.Items.Add(edge.key);
+                }
+            }
+            catch(Exception ex)
+            {
+
             }
         }
 
@@ -180,7 +187,23 @@ namespace Dialogue_Generator
 
         private void restrictionsButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string s = (String)NodeList.Items[NodeList.SelectedIndex];
 
+                Node n = graph.GetNode(s);
+                Restriction res = new Restriction();
+                res.CreateList(n.restrictions);
+                DialogResult dialogResult = res.ShowDialog();
+                if (dialogResult == DialogResult.OK)
+                {
+                    n.restrictions = res.restrictiones;
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void removeNodeButton_Click(object sender, EventArgs e)
@@ -284,13 +307,20 @@ namespace Dialogue_Generator
 
         private void graphNameButton_Click(object sender, EventArgs e)
         {
-            string name = graphText.Text;
+            try
+            {
+                string name = graphText.Text;
 
-            graph.name = name;
+                graph.name = name;
 
-            characterName.Text = name;
+                characterName.Text = name;
 
-            graphText.Text = "";
+                graphText.Text = "";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
