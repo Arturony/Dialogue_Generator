@@ -39,6 +39,7 @@ namespace Dialogue_Generator
             saveFileDialog1.DefaultExt = "json";
             saveFileDialog1.Filter = "json files (*.json)|*.json|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 0;
+            saveFileDialog1.FileName = graph.name;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 //valid path. save file
@@ -332,7 +333,7 @@ namespace Dialogue_Generator
             if (dialogResult == DialogResult.OK)
             {
                 characterName.Text = character.nombre;
-                graph = new Graph("");
+                graph = new Graph(character.nombre);
                 NodeList.Items.Clear();
                 EdgeList.Items.Clear();
                 ResetNode();
