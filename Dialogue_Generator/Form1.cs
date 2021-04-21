@@ -122,11 +122,18 @@ namespace Dialogue_Generator
 
            try
             {
-                graph.AddNode(n);
+                if(graph.nodes.ContainsKey(key))
+                {
+                    graph.nodes[key] = n;
+                }
+                else
+                {
+                    graph.AddNode(n);
+                    NodeList.Items.Add(n.key);
+                }  
 
                 ResetNode();
-
-                NodeList.Items.Add(n.key);
+                
             }
             catch(Exception ex)
             {
